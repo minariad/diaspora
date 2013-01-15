@@ -1,10 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 
 gem 'foreman', '0.60.2'
 
+platforms :ruby do # linux
 gem 'unicorn', '4.4.0', :require => false
+end
 
 gem 'rails_autolink', '1.0.9'
 
@@ -91,7 +93,7 @@ gem 'acts-as-taggable-on', '2.3.3'
 
 gem 'addressable', '2.3.2', :require => 'addressable/uri'
 gem 'http_accept_language', '1.0.2'
-gem 'typhoeus', '0.3.3'
+
 
 # views
 
